@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  **********************************************************************************************
+
+  這個檔案是由專案檔案中的工具產生: ServiceConfiguration.Cloud.cscfg
+
+  對這個檔案所做的變更可能會造成錯誤的行為，而且如果重新產生檔案，所做的變更將會遺失。
+
+  **********************************************************************************************
+-->
+<ServiceConfiguration serviceName="ThreeInOneCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="8d1ccc04-208f-4bb7-9913-a4f50d915cc5" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="WebRole2">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=threeinonewebservice;AccountKey=/cUrLckzMnjQFKAqtzrKlCcAlmG2AXt5DwqtnKuz8YpTxlOoJpKc+gaBUAnHO1TO/7Tp1+i8/yrVcVvn057+UA==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="8d1ccc04-208f-4bb7-9913-a4f50d915cc5" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="WebRole3">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=threeinonewebservice;AccountKey=/cUrLckzMnjQFKAqtzrKlCcAlmG2AXt5DwqtnKuz8YpTxlOoJpKc+gaBUAnHO1TO/7Tp1+i8/yrVcVvn057+UA==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="8d1ccc04-208f-4bb7-9913-a4f50d915cc5" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

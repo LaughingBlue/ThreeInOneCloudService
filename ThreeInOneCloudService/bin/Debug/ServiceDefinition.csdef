@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  **********************************************************************************************
+
+  這個檔案是由專案檔案中的工具產生: ServiceDefinition.csdef
+
+  對這個檔案所做的變更可能會造成錯誤的行為，而且如果重新產生檔案，所做的變更將會遺失。
+
+  **********************************************************************************************
+-->
+<ServiceDefinition name="ThreeInOneCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" schemaVersion="2015-04.2.6">
+  <WebRole name="WebRole1" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="80" />
+    </Endpoints>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="D:\BlueKnight\workspace\visual studio 2015\Projects\ThreeInOneCloudService\ThreeInOneCloudService\rcf\Debug\WebRole1Content\" />
+      </Content>
+    </Contents>
+  </WebRole>
+  <WebRole name="WebRole2" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="8080" />
+    </Endpoints>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="D:\BlueKnight\workspace\visual studio 2015\Projects\ThreeInOneCloudService\ThreeInOneCloudService\rcf\Debug\WebRole2Content\" />
+      </Content>
+    </Contents>
+  </WebRole>
+  <WebRole name="WebRole3" vmsize="Small">
+    <Sites>
+      <Site name="Web">
+        <Bindings>
+          <Binding name="Endpoint1" endpointName="Endpoint1" />
+        </Bindings>
+      </Site>
+    </Sites>
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" />
+    </ConfigurationSettings>
+    <Endpoints>
+      <InputEndpoint name="Endpoint1" protocol="http" port="8081" />
+    </Endpoints>
+    <Contents>
+      <Content destination=".\">
+        <SourceDirectory path="D:\BlueKnight\workspace\visual studio 2015\Projects\ThreeInOneCloudService\ThreeInOneCloudService\rcf\Debug\WebRole3Content\" />
+      </Content>
+    </Contents>
+  </WebRole>
+</ServiceDefinition>

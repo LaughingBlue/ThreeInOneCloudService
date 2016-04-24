@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f3ab0611-f71f-41a5-b31e-e9256ebf191d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49711/WCF_CloudRandomService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WCF_CloudRandomService.xsd" MetadataType="Schema" ID="2928bdd4-2671-4885-a984-645675756f20" SourceId="1" SourceUrl="http://localhost:49711/WCF_CloudRandomService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WCF_CloudRandomService1.xsd" MetadataType="Schema" ID="5205f026-1a84-45f5-bb06-008d821ba015" SourceId="1" SourceUrl="http://localhost:49711/WCF_CloudRandomService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WCF_CloudRandomService.disco" MetadataType="Disco" ID="65f49eb4-b92b-4443-8a7d-1941d6906bfc" SourceId="1" SourceUrl="http://localhost:49711/WCF_CloudRandomService.svc?disco" />
+    <MetadataFile FileName="WCF_CloudRandomService2.xsd" MetadataType="Schema" ID="dcec4ddc-f120-432c-a4f2-b8d50ee47888" SourceId="1" SourceUrl="http://localhost:49711/WCF_CloudRandomService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WCF_CloudRandomService.wsdl" MetadataType="Wsdl" ID="78ea2d5f-dcb6-4211-99e6-25e2794eba9c" SourceId="1" SourceUrl="http://localhost:49711/WCF_CloudRandomService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
